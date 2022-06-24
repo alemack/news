@@ -1,0 +1,24 @@
+.card {
+    width: 32%;
+    margin-left: 1%;
+    background: linear-gradient(rgb(220, 220, 220),rgba(235, 237, 240));
+}
+
+.card-header {
+    background: rgb(234, 236, 239);
+}
+
+.pict img { 
+    width: 400px; 
+    height: 200px; 
+    margin-right: 10px; 
+    margin-bottom: 10px;
+}
+
+body {
+	background: linear-gradient(rgb(255,255,255),rgba(33, 37, 41)); 
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-attachment: scroll;
+	font-family: sans-serif;
+}
