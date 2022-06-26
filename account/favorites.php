@@ -58,13 +58,3 @@
 <br><br>
 <a href="http://news/account/user_account.php"><button>Назад</button></a>
 
-<table>
-    <tr>
-        <td>a</td>
-        <td>s</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-</table>
