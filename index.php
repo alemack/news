@@ -13,7 +13,7 @@
     <?php require "blocks/header.php"; ?>
     
     <?php
-        if(isset($_POST['science']) || isset($_POST['health']) || isset($_POST['business'])):
+        if(isset($_GET['science']) || isset($_GET['health']) || isset($_GET['business'])):
             require "blocks/headline_news.php";
         else:
             require "blocks/regular_news.php";  

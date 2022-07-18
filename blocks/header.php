@@ -10,7 +10,7 @@
             </div>
         </a>
 
-        <form  class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" action="index.php" method="POST">
+        <form  class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" action="index.php" method="GET">
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><button type="submit" class="me-2 btn-outline-light btn btn-dark" 
                 title="Актуальные новости в сфере науки." 

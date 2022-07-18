@@ -3,11 +3,11 @@
     include './config/api_key.php';
     $newsapi = new NewsApi($api_key);
     
-    if(isset($_POST['science'])): 
+    if(isset($_GET['science'])): 
         $category="science";
-    elseif(isset($_POST['health'])): 
+    elseif(isset($_GET['health'])): 
         $category="health";
-    elseif(isset($_POST['business'])): 
+    elseif(isset($_GET['business'])): 
         $category="business";
     endif;
 
@@ -18,13 +18,13 @@
 
 <form class="" action="blocks/advanced_features.php" method="POST">
     <div class="container mt-5">
-        <?php if(isset($_POST['science'])): ?>
+        <?php if(isset($_GET['science'])): ?>
             <?php $category_name="науки" ?>
         <?php endif; ?>
-        <?php if(isset($_POST['health'])): ?>
+        <?php if(isset($_GET['health'])): ?>
             <?php $category_name="медицины" ?>
         <?php endif; ?>
-        <?php if(isset($_POST['business'])): ?>
+        <?php if(isset($_GET['business'])): ?>
             <?php $category_name="бизнеса" ?>
         <?php endif; ?>
         <h3 align="center">Новости <?=$category_name?>-><?php echo $count ?> </h3>
