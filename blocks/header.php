@@ -2,6 +2,12 @@
     <link rel="stylesheet" href="css/header.css">
 </head>
 <header class="p-3 bg-dark text-white">
+    <?php
+        // vendor connect
+        require_once '../news/vendor/autoload.php';
+        session_start(); 
+    ?>
+
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/">
@@ -29,8 +35,8 @@
                 <button type="submit" name="word_search" class="btn btn-outline-light me-2">Поиск</button>
             </div>
         </form>
-        
-        <?php session_start(); ?>
+
+
         <form action="../validation/user_log_form.php" method="POST">
         <div class="text-end">
             <?php if($_SESSION["user"] == 'true'): ?>
@@ -43,4 +49,4 @@
         </form>
       </div>
     </div>
-  </header>
+  </header>   

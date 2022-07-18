@@ -9,7 +9,7 @@
     <title>OpenNews</title>
 </head>
 <body>
-    <?php require_once '../news/vendor/autoload.php'; ?>
+    
     <?php require "blocks/header.php"; ?>
     
     <?php
