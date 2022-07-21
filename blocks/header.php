@@ -3,9 +3,15 @@
 </head>
 <header class="p-3 bg-dark text-white">
     <?php
-        // vendor connect
-        require_once '../news/vendor/autoload.php';
-        session_start(); 
+        // // vendor connect
+        // require_once '../news/vendor/autoload.php';
+       
+
+        // session_start(); 
+        // // news api conn
+        // use jcobhams\NewsApi\NewsApi;
+        // include './config/api_key.php';
+        // $newsapi = new NewsApi($api_key);
     ?>
 
     <div class="container">
@@ -49,4 +55,4 @@
         </form>
       </div>
     </div>
-  </header>   
+  </header>  

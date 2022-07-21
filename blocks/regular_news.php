@@ -6,6 +6,8 @@
 </head>
 
 <?php
+    
+    require_once '../news/vendor/autoload.php';
     use jcobhams\NewsApi\NewsApi;
     include './config/api_key.php';
     $newsapi = new NewsApi($api_key);

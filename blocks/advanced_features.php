@@ -3,7 +3,7 @@
     use jcobhams\NewsApi\NewsApi;
     include '../config/api_key.php';
     $newsapi = new NewsApi($api_key);
-   // session_start();
+    session_start();
     $userId = $_SESSION["user_id"];
 ?>
 

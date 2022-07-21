@@ -1,7 +1,8 @@
 <?php
-    use jcobhams\NewsApi\NewsApi;
-    include './config/api_key.php';
-    $newsapi = new NewsApi($api_key);
+     require_once '../news/vendor/autoload.php';
+     use jcobhams\NewsApi\NewsApi;
+     include './config/api_key.php';
+     $newsapi = new NewsApi($api_key);
     
     if(isset($_GET['science'])): 
         $category="science";
@@ -13,7 +14,7 @@
 
     $articles = $newsapi->getTopHeadlines($category);
     $articles = $articles->articles;
-    $count = count($articles);
+    $count = count($articles); 
 ?>
 
 <form class="" action="blocks/advanced_features.php" method="POST">
